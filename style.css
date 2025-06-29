@@ -1,0 +1,115 @@
+@font-face{
+    font-family: Garamont;
+    src:url(`Fonts/garamond/Garamond.ttf`) format('truetypes') local();
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('Imagens/9723166.jpg');
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: white;
+    font-size: 100%;
+    vertical-align: baseline;
+    line-height: 1;
+
+}
+main{
+    background-color: white;
+    width: 80%;
+    box-shadow: 5px 5px 10px red;
+}
+.cabecalho{
+    background-image: url(Imagens/12658079.jpg);
+    width: 100%;
+    text-align: left;
+    font-size: 100%;
+    margin: 4px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.Botoes{
+    display: block;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 5px;
+    font-family: Garamond;
+    font-size: 50px;
+}
+.container {
+    height: auto;
+    display: flex;
+    justify-content:center;
+    padding: 7em;
+    flex-wrap: wrap;
+}
+.texto {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    flex-shrink: 1;
+}
+.imagem{
+    display: flex;
+    width: 35%;
+    box-sizing: border-box;
+}
+.img1{
+    box-sizing: border-box;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    align-content: end;
+}
+.t1{
+    height: 200px;
+    text-align: center;
+}
+h1{
+    text-align: left;
+}
+h2{
+    text-align: left;
+    font-size: 20px;
+}
+.contato{
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15 px rgba(0, 0, 0, 0.1);
+}
+form{
+    display:flex;
+    padding: 50px;
+    flex-direction: column;
+    p{
+        font-weight: bolder;
+        font-size: larger;
+    }
+    label{
+    font-weight: bolder;
+    margin-bottom: 5px;
+    }
+    input{
+        padding: 10px;
+        cursor:pointer
+    }
+    #comentario{
+        height: 15em;
+    }
+}
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+    text-align: center;
+}
