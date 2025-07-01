@@ -136,7 +136,11 @@ form{
 
 }
 footer{
+    margin-top: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: smaller;
     text-align: center;
+    
 }
