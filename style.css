@@ -1,13 +1,16 @@
+
+/*Adiconando uma fonte diferente */
 @font-face{
     font-family: Garamont;
     src:url(`Fonts/garamond/Garamond.ttf`) format('truetypes') local();
 }
+/*reset padrao para sobrepor as margens padroes de navegadores*/
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    background-image: url('Imagens/9723166.jpg');
+    background-image: url('Imagens/9723166.jpg');/*adciona imgem no fundo do site*/
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -19,11 +22,13 @@ body {
     line-height: 1;
 
 }
+/*adicona cor de fundo, define o tamanho do main e adicona uma sobra de fundo*/
 main{
     background-color: white;
     width: 80%;
     box-shadow: 5px 5px 10px red;
 }
+/*menus home, qwerty, azerty, dvorak e contato*/
 .cabecalho{
     width: 100%;
     text-align: left;
@@ -31,13 +36,19 @@ main{
     margin: 1px;
     display:flex;
     justify-content: center;
-    flex-wrap: wrap;
-    position: sticky;
+    flex-wrap: wrap; /*faz a quebra quando a tela é menor que o tamanho do menu*/
+    position: sticky;/* faz com que a posicao se altere com o scroll, junto com das duas proximas linhas faz quando desca a pagina ele permanece fixado no topo e sobrepoe com z-index*/
     top: 0;
     z-index: 1;
 }
 
-.Botoes{
+a{
+    font-family: Garamond;
+    text-decoration: none;
+    color: black;
+}
+
+.Botoes{ /*formaro dos menus home, qwerty, azerty, dvorak e contato*/
     display: block;
     box-sizing: border-box;
     height: 1.5em;
@@ -45,22 +56,36 @@ main{
     font-family: Garamond;
     font-size: clamp(2.0em, 2.5vw, 2.5em);
     box-shadow: 2px 2px 2px blue;
+    background-color: white;
 }
-.container {
+
+.container { /* Formata cada div generica e faz quebrar seus conteudos*/
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    padding: clamp(1em, 3vw, 7em);
+    padding: clamp(2%, 5%, 10%);
 }
-.texto {
+.container2{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        align-self: center;
+    }
+    p{
+        padding: 2%;
+    }
+}
+.texto { /*formato dos textos */
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-items: flex-end;
     flex-shrink: 1;
 }
-.Imagem{
+.Imagem{ /*formata o box das imagens*/
     display: flex;
     width: 35%;
     height: auto;
@@ -69,13 +94,13 @@ main{
     box-sizing: border-box;
     overflow:visible;
 }
-.Imagem img{
+.Imagem img{ /*formata a imagens */
     width: 100%;
     transition: transform 0.4s ease;
     display: block;
     object-fit: contain;
 }
-.Imagem:hover img{
+.Imagem:hover img{ /* formata o tamanho zoons da imagens e centraliza do meio da tela*/
     max-width: 40em;
     width: 100%;
     height: auto;
@@ -83,31 +108,29 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.0);
-    z-index: 999;
+    z-index: 999; /*faz com que sobrepoe todo o conteudo da pagina com z-index inferior a 999*/
 }
-.img1{
+.img1{ /*define o tamanho da classe imagem*/
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
     overflow: hidden;
 }
-.t1{
+h1{/*formata o h1*/
     height: 200px;
     text-align: center;
-}
-h1{
-    text-align: left;
 }
 h2{
     text-align: left;
     font-size: 20px;
 }
-.contato{
+.contato{ /*formata o box comentario*/
     padding: 40px 50px;
     border-radius: 10px;
     box-shadow: 0 0 15 px rgba(0, 0, 0, 0.1);
 }
-form{
+form{ /*formata os itens dos comentarios, que sao os campo de Nome, Email e O Comentario*/
     display:flex;
     padding: 50px;
     flex-direction: column;
@@ -126,7 +149,7 @@ form{
     #comentario{
         height: 15em;
     }
-    input[type="submit"]{
+    input[type="submit"]{/*formata o botao de enviar o comentario e adicona efeito quando o mouse esta em cima dele*/
         background-color: red;
         transition: background-color 0.3s ease;
     }
@@ -135,11 +158,23 @@ form{
     }
 
 }
-footer{
+.links{
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    padding: clamp(1em, 3vw, 7em);
+    font-size: 1.5em;
+
+}
+.item{
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer{ /*formata o roda-pe*/
     margin-top: 3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     font-size: smaller;
     text-align: center;
-    
 }

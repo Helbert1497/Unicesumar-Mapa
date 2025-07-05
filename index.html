@@ -8,11 +8,10 @@
     </head>
     <body>
         <header class="cabecalho">
-            <button onclick="irpara('home')" class="Botoes">HOME</button>
             <button onclick="irpara('qwerty')" class="Botoes">QWERTY</button>
             <button onclick ="irpara('azerty')" class="Botoes">AZERTY</button>
             <button onclick= "irpara('dvorak')" class="Botoes">DVORAK</button>
-            <button onclick= "irpara('contato')" class="Botoes">CONTATO</button>
+            <a href="contato.html" class="Botoes" >CONTATO</a>
         </header>
         <main>
             <div class="container">
@@ -57,18 +56,15 @@
             </div>
             </div>
             <script src="Scripts.js" defer></script>
-            <form id="contato">
-                <p>Envie um Comentário</p>
-                <label for="nome" >Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Escreva seu Nome" required>
-                <label for="email">E-mail</label>
-                <input id="email" name="email" placeholder="email@email.com" required></input>
-                <label for="comentario">Comentário</label>
-                <!--input type="text" id="comentario" name="comentario"-->
-                <textarea id="comentario" name="comentario" rows="6" cols="30" placeholder="Digite seu comentario"></textarea>
-                <input type="submit" onclick="" value="Enviar">
-                <script src="validaremail.js"></script>
-            </form>
+            <div id="Leia" class="links">
+                <h2>Continue Lendo em </h2>
+                <a href="split.html" class="item">Teclado Split</a>
+                <a href="tecladomecanico.html" class="item">Teclado Mecânico</a>
+            </div>
+            <div class="links">
+                <h2>Envie um Comentario </h2>
+                <a href="contato.html" class="item">Clicando aqui</a>
+            </div>
         </main>
         <footer>
             <p>© 2025 Helbert. Todos os direitos reservados.</p>
